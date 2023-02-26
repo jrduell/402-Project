@@ -1,4 +1,4 @@
-export default function feed() {
+export default function Post() {
     return (
         <div>Deez nuts</div>
     )

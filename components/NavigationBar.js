@@ -1,5 +1,17 @@
-export default function feed() {
+import Link from 'next/link'
+
+export default function NavBar() {
     return (
-        <div>Deez nuts</div>
+        <ul>
+            <li>
+                <Link href="/">Home</Link>
+            </li>
+            <li>
+                <Link href="/login">Log In</Link>
+            </li>
+             <li>
+                <Link href="/create">Create Account</Link>
+            </li>
+        </ul>
     )
   }
