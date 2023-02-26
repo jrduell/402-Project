@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import NavBar from '@/components/NavigationBar'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
 import NavBar from 'components/NavigationBar'
 import SideBar from 'components/SideBar'
 import Post from 'components/Post'
@@ -18,9 +17,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className="">
         <NavBar />
         <SideBar/>
+        <Post />
+        <Post />
         <Post />
       </main>
     </>
