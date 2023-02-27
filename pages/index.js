@@ -13,8 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex">
-        <SideBar/>
-        <div className="bg-gray-100 p-4 flex flex-wrap">
+        <SideBar />
+        <div className="flex flex-wrap bg-[#FAF9F6] p-4">
           <Post />
           <Post />
           <Post />
@@ -30,5 +30,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }

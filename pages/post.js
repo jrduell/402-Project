@@ -14,7 +14,7 @@ export default function post() {
           <div>
             <SideBar />
           </div>
-          <div>
+          <div className='bg-[#FAF9F6]'>
             {/* This image will later be the actual graph of data */}
             <img className="w-2/4" src="test_img.png" />
             <p>

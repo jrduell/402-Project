@@ -18,12 +18,10 @@ export default function NavBar() {
             </Link>
           </div>
           <div className="">
+            <input type="text" placeholder="Search.."></input>
             <Link className="navbar-button" href="/">
               Home
             </Link>
-
-            <input type="text" placeholder="Search.."></input>
-
             <Link className="navbar-button" href="/login">
               Log In
             </Link>
