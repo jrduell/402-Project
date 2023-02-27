@@ -10,15 +10,17 @@ export default function post() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="">
+        <main className="flex">
           <div>
             <SideBar />
+          </div>
+          <div>
             {/* This image will later be the actual graph of data */}
             <img className="w-2/4" src="test_img.png" />
             <p>
-              Here is much more detailed information about this data: such as
-              our findings where the data came from, and transformations on the
-              data
+              Here is more detailed information about this data such as:{" "}
+              <br></br>* Our findings <br></br>* where the data came from{" "}
+              <br></br>* transformations on the data <br></br>
             </p>
           </div>
         </main>
