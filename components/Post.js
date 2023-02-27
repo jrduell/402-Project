@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Post() {
     return (
-      <div className="m-2 w-72 bg-gray-300 rounded-lg drop-shadow-md mb-6">
+      <div className="m-8 w-72 bg-gray-300 rounded-lg drop-shadow-md mb-6">
         {/* Link will need to be dynamically fetched based on post ID
         probably end up being something like post/{id} */}
         <Link href="/post">

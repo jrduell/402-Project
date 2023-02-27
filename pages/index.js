@@ -13,10 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex">
-        <div>
-          <SideBar/>
-        </div>
-        <div className="bg-gray-100 p-4 flex flex-wrap overflow-scroll">
+        <SideBar/>
+        <div className="bg-gray-100 p-4 flex flex-wrap">
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+          <Post />
           <Post />
           <Post />
           <Post />

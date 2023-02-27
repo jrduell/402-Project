@@ -10,7 +10,7 @@ export default function SideBar() {
       ];
 
     return (
-      <div className="sticky h-screen w-52 border-r border-gray-400 bg-gray-200 p-4">
+      <aside className="sticky h-screen top-0 border-r border-gray-400 bg-gray-200 p-4">
         <div className="items-center">
           <h1 className="flex flex-col font-bold">Subscriptions</h1>
           {subscriptions.map((channel) => (
@@ -19,6 +19,6 @@ export default function SideBar() {
             </div>
           ))}
         </div>
-      </div>
+      </aside>
     );
   }
