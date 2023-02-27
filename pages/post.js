@@ -12,7 +12,6 @@ export default function post() {
         </Head>
         <main className="">
           <div>
-            <NavBar />
             <SideBar />
             {/* This image will later be the actual graph of data */}
             <img className="w-2/4" src="test_img.png" />

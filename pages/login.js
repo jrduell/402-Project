@@ -1,5 +1,4 @@
 import { useState } from "react";
-import NavBar from 'components/NavigationBar'
 
 export default function login() {
   const [email, setEmail] = useState("");
@@ -16,7 +15,6 @@ export default function login() {
 
   return (
     <>
-      <NavBar />
       <div className="flex min-h-screen items-center justify-center">
         <form onSubmit={handleSubmit} className="flex flex-col">
           <label className="m-1 rounded border py-1 pl-1">
