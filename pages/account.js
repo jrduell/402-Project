@@ -21,6 +21,7 @@ export default function post() {
           </div>
           {/* Show posts that belong to this user here */}
           <div className='flex flex-row gap-12 justify-center mt-6'>
+          <p>Posts:</p>
             <Post />
             <Post />
             <Post />
