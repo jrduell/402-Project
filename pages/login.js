@@ -14,20 +14,20 @@ export default function login() {
   }
 
   return (
-    <div className="flex min-h-screen justify-center items-center">
+    <div className="flex min-h-screen items-center justify-center">
       <form onSubmit={handleSubmit} className="flex flex-col">
-        <label className="border m-1">
+        <label className="m-1 rounded border py-1 pl-1">
           <input
             type="text"
-            placeholder="email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <label className="border m-1">
+        <label className="m-1 rounded border py-1 pl-1">
           <input
             type="text"
-            placeholder="password"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -35,7 +35,7 @@ export default function login() {
 
         <button
           type="submit"
-          className="self-center bg-gray-400 m-1 py-2 px-4 rounded"
+          className="m-1  self-center rounded bg-gray-400 py-2 px-4"
         >
           Submit
         </button>
