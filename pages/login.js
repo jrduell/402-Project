@@ -1,15 +1,45 @@
-
 import { useState } from "react";
 
-export default function post() {
-    return (
-      <div className="flex min-h-screen justify-center items-center">
-        <form className="flex flex-col" onSubmit="">
-          <input className="border m-1" type="text" placeholder="email" />
-          <input className="border m-1" type="text" placeholder="password" />
+export default function login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-          <input className="self-center bg-gray-400 m-1 py-2 px-4 rounded" type="submit" />
-        </form>
-      </div>
-    );
+  function handleSubmit(e) {
+    // This keep form from submitting!! use to test
+    e.preventDefault();
+
+    // Use data to log user in
+    console.log(email);
+    console.log(password);
   }
+
+  return (
+    <div className="flex min-h-screen justify-center items-center">
+      <form onSubmit={handleSubmit} className="flex flex-col">
+        <label className="border m-1">
+          <input
+            type="text"
+            placeholder="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+        <label className="border m-1">
+          <input
+            type="text"
+            placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+
+        <button
+          type="submit"
+          className="self-center bg-gray-400 m-1 py-2 px-4 rounded"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+}
